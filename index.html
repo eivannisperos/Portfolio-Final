@@ -1,31 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>eivan nisperos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </head>
 
   <body>
-    <div class="full-height flex-display column">
-      <section class="flex-display">
-        <div class="flex-display">
+
+    <div id="home-content" class="full-height flex-display column">
+      <section id="logo-parent-container" class="flex-display">
+        <div id="logo-child-container" class="flex-display column">
           <h1 id="logo">EIVAN NISPEROS</h1>
-          <h2 id="logo-subheader">WEB DEVELOPER</h2>
+          <h3 id="logo-subheader">WEB DEVELOPER</h3>
         </div>
       </section>
 
       <div id="sneakr" class="flex-display column work-btn">
-        <a>SNEAKR</a>
+        <a class="btn-logo">SNEAKR</a>
+        <div class="flex-display column concealable card-content">
+          <h4>SNEAKR</h4>
+          <h4 class="alt-subheader">JANUARY 2017 - APRIL 2017</h4>
+          <div class="img-container">
+            <a href="sneakr.html"><img src="img/sneakr.JPG"/></a>
+          </div>
+
+          <h4 class="alt-subheader">HTML CSS JAVASCRIPT JQUERY MYSQL AJAX PHP</h4>
+
+          <div class="quick-desc">
+            <p>
+              SNEAKR is a web application that served as a database for sneakers. It was inspired by both my desire to learn and to apply database technologies using MySQL and PHP and predictive text using AJAX, as well as my obsession with urban sneaker culture (the YEEXY craze peaked during the duration of the project).
+            </p>
+          </div>
+
+          <a class="alt-subheader content-more" href="sneakr.html">></a>
+        </div>
       </div>
       <div id="flare" class="flex-display column work-btn">
-        <a>FLARE</a>
+        <a class="btn-logo">FLARE</a>
+        <div class="flex-display column concealable card-content">
+          <h4>FLARE</h4>
+          <h4 class="alt-subheader">MAY 2016 - SEPTEMBER 2016</h4>
+          <div class="img-container">
+            <a href="flare.html"><img src="img/flare.JPG"/></a>
+          </div>
+
+          <h4 class="alt-subheader">JAVA ANDROID-STUDIO</h4>
+
+          <div class="quick-desc">
+            <p>
+              FLARE is a rapid response emergency application that allows the user to contact emergency services with a touch of a button. Emergency events can occur anywhere, even when the user himself/herself is incapacitated and cannot contact the proper authorities. FLARE connects users with emergency responders with as minimal keystrokes or interactions with the application to decrease the amount of time and effort it takes to contact them.
+            </p>
+          </div>
+
+          <a class="alt-subheader content-more" href="flare.html">></a>
+        </div>
       </div>
+
       <div id="about" class="flex-display column work-btn">
-        <a>ABOUT</a>
+        <a class="btn-logo">ABOUT</a>
+        <div class="flex-display column concealable card-content">
+          <h1>I'm Eivan.</h1>
+          <h2 class="alt-subheader">IM AN ASPIRING WEB/FRONT-END DEVELOPER, SEEKING TO BRIDGE THE GAP BETWEEN DEVELOPMENT, USER EXPERIENCE, AND DESIGN.</h2>
+
+          <nav class="content-external-links">
+            <a class="nav-btn" href="https://github.com/eivannisperos">GITHUB</a>
+          </nav>
+        </div>
       </div>
     </div>
   </body>

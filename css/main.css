@@ -1,0 +1,348 @@
+/****************************************************************
+main components
+-fonts
+-general sylizization
+*****************************************************************/
+@font-face {
+  font-family: "Gobold Bold Italic";
+  src: url("fonts/GoboldBoldItalic.otf");
+}
+
+@font-face {
+  font-family: "Gobold Thin Italic";
+  src: url("fonts/GoboldThinItalic.otf");
+}
+
+@font-face {
+  font-family: "VCR OSD";
+  src: url("fonts/VCR_OSD_MONO_1.001.ttf") format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gobold Bold Italic";
+  margin: 0;
+  color: white;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+}
+
+h4 {
+  letter-spacing: 2px;
+}
+
+a {
+  font-family: "Gobold Thin Italic";
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  color: white;
+  font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2rem;
+}
+
+li {
+  margin: 1rem 0 1rem 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  color: white;
+}
+
+
+/****************************************************************
+main components
+-structures
+*****************************************************************/
+.full-height {
+  height: 100vh;
+}
+
+.flex-display {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+/****************************************************************
+home content - mobile
+- main logo
+*****************************************************************/
+#home-content {
+  background-color: #B8B6C2;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-parent-container {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#logo-child-container {
+  margin: 1rem 0 1em 0;
+}
+
+#logo {
+  letter-spacing: 0px;
+  font-size: 2rem;
+}
+
+#logo-subheader {
+  font-family: "Gobold Thin Italic";
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color: #BAB8C4;
+  letter-spacing: 0.62rem;
+  background-color: white;
+  text-align: center;
+}
+
+/****************************************************************
+main nav button divs - mobile
+*****************************************************************/
+.work-btn {
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.5s ease-out;
+  overflow-y: scroll;
+}
+
+.work-btn::-webkit-scrollbar{
+  display: none;
+}
+
+#sneakr {
+  background-color: #1850AF;
+}
+
+#flare {
+  background-color: #D5454E;
+}
+
+#about {
+  background-color: #DBB23E;
+}
+
+/****************************************************************
+main nav button expandable content - mobile
+-alt subheader used for dates and technologies used
+*****************************************************************/
+.alt-subheader {
+  font-family: 'VCR OSD', sans-serif;
+  font-weight: lighter;
+  font-size: 0.7rem;
+  letter-spacing: normal;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.concealable {
+  display: none;
+}
+
+.quick-desc, .img-container, .main-img-container {
+  margin-top: 1rem;
+}
+
+.img-container, .main-img-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.main-img-container {
+  width: 100%;
+}
+
+
+.content-more {
+  font-size: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  align-self: flex-end;
+}
+
+/****************************************************************
+main content
+*****************************************************************/
+.section-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-btn{
+  color: black;
+  background-color: white;
+  border-radius: 10%;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+  margin-right: 0.5rem;
+}
+
+.nav-btn:visited {
+  color: black;
+}
+
+.content-external-links {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.full-content-container {
+  padding: 1rem;
+  padding-top: 4rem;
+  margin: auto;
+}
+
+.full-content-nav {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in;
+}
+
+.hidden-links {
+  margin-top: 1rem;
+  display: none;
+}
+
+.hidden-links a {
+  margin: 0.5rem 0 0.5rem 0;
+  letter-spacing: 1px;
+}
+/****************************************************************
+SNEAKR main content
+*****************************************************************/
+#sneakr-main {
+  background-color: #1850AF;
+}
+
+/****************************************************************
+FLARE main content
+*****************************************************************/
+#flare-main {
+  background-color: #D5454E;
+}
+
+/****************************************************************
+ABOUT main content
+*****************************************************************/
+#about div {
+  width: 100%;
+  align-items: center;
+}
+
+/****************************************************************
+Styleguide - text types sections
+*****************************************************************/
+code {
+  display: inline-block;
+  margin: 1rem 0 1rem 0;
+  background-color: white;
+  padding-left: 1rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+code p {
+  color: gray;
+}
+
+.styleguide-section {
+  padding: 1rem;
+  padding-top: 4rem;
+}
+
+#styleguide-content {
+  width: 100%;
+}
+
+#text-types {
+  background-color: #D5454E;
+}
+
+/****************************************************************
+Responsive
+*****************************************************************/
+
+@media (min-width: 760px) {
+  .card-content {
+    width: 70%;
+  }
+
+  .full-content-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  .card-content {
+    width: 60%;
+  }
+
+  .full-content-container {
+    width: 60%;
+  }
+
+  .img-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-content {
+    width: 40%;
+  }
+
+  .full-content-container {
+    width: 40%;
+  }
+}

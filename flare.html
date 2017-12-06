@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>eivan nisperos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+
+  <body id="flare-main">
+    <nav class="full-content-nav flex-display row">
+      <div class="flex-display column">
+        <a id="enable-hidden-nav" class="alt-subheader">QUICK JUMP</a>
+        <div class="hidden-links flex-display column">
+          <a href="#flare-overview">OVERVIEW</a>
+          <a href="#flare-research">RESEARCH</a>
+          <a href="#flare-functionality">FUNCTIONALITY</a>
+          <a href="#flare-development">DEVELOPMENT</a>
+          <a href="#flare-interaction">INTERACTION</a>
+        </div>
+      </div>
+      <a class="alt-subheader" href="index.html">HOME</a>
+    </nav>
+    <div class="full-content-container flex-display column">
+      <h1>FLARE</h1>
+      <h4 class="alt-subheader">MAY 2016 - SEPTEMBER 2016</h4>
+      <div class="main-img-container">
+        <img src="img/flare.JPG"/>
+      </div>
+      <h4 class="alt-subheader">HTML CSS JAVASCRIPT JQUERY MYSQL AJAX PHP</h4>
+
+      <nav class="content-external-links">
+        <a class="nav-btn" href="https://github.com/eivannisperos">GITHUB</a>
+      </nav>
+
+      <section id="flare-overview" class="section-content">
+        <h2>Overview</h2>
+        <p>
+          Sexual assault and rape has been the headline of every major news outlet both
+          nationally and at the international level. Victims under the age of 18 make up 44% of
+          sexual assault victims in the United States, and 93% of these victims know the
+          perpetrators, or trust them. Sexual assault can occur anywhere, from the recent
+          incidents in both SFU and UBC, to the Stanford rape case that occurred last year.
+          Victims often find themselves incapacitated nor do they possess the capacity to contact
+          emergency responders. That’s why we wanted to develop an application that does that
+          for a potential victim.
+        </p>
+      </section>
+
+      <section id="flare-research" class="section-content">
+        <h2>Research</h2>
+        <p>
+          Our focus on research was to find out how perpetrators carry out their attacks on victims. We have found two of the most common scenarios in which a victim is assaulted. The first is that the victim is completely rendered from responding, or is already rendered as such. An example would be that the victim is drunk or that they are under some sort of sedative drug. The second is that the victim, most likely alone, is attacked and the perpetrator attempts to render the victim to be unable to respond to such an attack, either by holding them down physically or preventing them calling for help. What we strive to do, therefore, is to reduce the number of steps needed to contact emergency responders or anyone for that matter, primarily through mobile phones. Why mobile phones? As the world becomes increasingly digitized, mobile phones has become an extension of everyone, allowing users access to a multitude of information and features, including access to emergency responders. Quick access to emergency calls are a standard feature in most mobile phones today. Samsung’s S series include a quick Emergency Call button on the lock screen and will allow users to call emergency responders without unlocking the phone. The problem to this, is that, once the user has pressed this button, the user is still required to make precise actions, dialling the number 911. What if the user was already under attack and struggling to hold the phone? For IPhones, the feature is identical, and with the release of the IPhone X, the feature was almost entirely hidden.
+        </p>
+      </section>
+
+      <section id="flare-functionality" class="section-content">
+        <h2>Functionality</h2>
+        <div class="img-container">
+          <img src="img/flare-home.jpg"/>
+        </div>
+
+        <p>
+          The basic functionality consists of pressing of a simple button fragment to initate the action that was tied to it, calling emergency services. This can be modified to respond to three modes: Caution, Emergency and Basic. These modes are customizable by the user. They are able to customize which number or how many contacts should the app contact. They can be determined by the severity of the problem, from minor calls to full emergencies.
+        </p>
+      </section>
+
+      <section id="flare-development" class="section-content">
+        <h2>Development</h2>
+        <p>
+          As we developed the application, we wanted the application to be quick at contacting emergency responders at the touch of a button. The problem with this, is that what if a user accidentally did contact emergency responders without the need for them? Thus, we implemented a system that if Flare is activated accidentally, a countdown begins before its features are fired up. The countdown timer can be customized by the user. As a developer, it was my responsibility to develop and design this feature.
+        </p>
+      </section>
+
+      <section id="flare-interaction" class="section-content">
+        <h2>Interaction</h2>
+        <p>
+          Below is a summarized interaction flow chart that outlined how the user would active Flare.
+        </p>
+
+        <div class="img-container">
+          <img src="img/flare-img3.JPG"/>
+        </div>
+
+        <p>
+          The user would then use a matching number/color system that requires the user to match the square/number (pin) to deactivate Flare.
+        </p>
+      </section>
+
+      <section id="flare-lock" class="section-content">
+        <h2>Lock/Pin System</h2>
+        <p>
+          For the development process, I created a function that detected a dragging action from the user. In this case, In created the squares as object, which this function listens to when the user drags the. When the user drops the color into the proper square, the function resets once more.
+        </p>
+        <div class="img-container">
+          <img src="img/flare-img1.JPG"/>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

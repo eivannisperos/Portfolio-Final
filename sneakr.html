@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>eivan nisperos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+
+  <body id="sneakr-main" class="flex-display">
+    <nav class="full-content-nav flex-display row">
+      <div class="flex-display column">
+        <a id="enable-hidden-nav" class="alt-subheader">QUICK JUMP</a>
+        <div class="hidden-links flex-display column">
+          <a href="#sneakr-overview">OVERVIEW</a>
+          <a href="#sneakr-projectgoal">PROJECT GOAL</a>
+          <a href="#sneakr-process">PROCESS</a>
+          <a href="#sneakr-register">RESGISTER AND LOG IN</a>
+          <a href="#sneakr-database">DATABASE DESIGN</a>
+          <a href="#sneakr-predictive">PREDICTIVE SEARCH RESULT</a>
+        </div>
+      </div>
+      <a class="alt-subheader" href="index.html">HOME</a>
+    </nav>
+    <div class="full-content-container flex-display column">
+      <h1>SNEAKR</h1>
+      <h4 class="alt-subheader">JANUARY 2017 - APRIL 2017</h4>
+      <div class="main-img-container">
+        <a href="sneakr.html"><img src="img/sneakr.JPG"/></a>
+      </div>
+      <h4 class="alt-subheader">HTML CSS JAVASCRIPT JQUERY MYSQL AJAX PHP</h4>
+
+      <nav class="content-external-links">
+        <a class="nav-btn" href="http://www.sfu.ca/~enispero/SNEAKR/index.php">SITE</a>
+        <a class="nav-btn" href="https://github.com/eivannisperos">GITHUB</a>
+      </nav>
+
+      <section id="sneakr-overview" class="section-content">
+        <h2>Overview</h2>
+        <p>
+          Developer: Eivan Nisperos
+        </p>
+        <p>
+          SNEAKR was an initiative, a desire to go deeper into web technologies. I wanted to create a web application that allowed me to experiment with PHP, MySQL, and AJAX. Thus, the primary objective to this project is to acquire in-depth understanding of concepts of internet technologies, listed above, and how they relate to web application development. It is also important to note that this project was approached with a technical aspect in mind, not through design. Thus, the overall aesthetic design was not priority for this project, although user experience was considered and sought after during the development of the project.
+        </p>
+      </section>
+
+      <section id="sneakr-projectgoal" class="section-content">
+        <h2>Project Goal</h2>
+        <p>
+          I wanted to create a web application that was able to hold data on an online database, a feature that is expected on all web applications today. Thus, I needed to find a way for the database to communicate with the web application, or interface, so that it can be accessed and manipulated by the user as so they please, without compromising data integrity.
+        </p>
+      </section>
+
+      <section id="sneakr-process" class="section-content">
+        <h2>Process</h2>
+        <p>
+          The project was split into three stages, where each stage consisted of a main feature that utilized the technologies listed above:
+        </p>
+        <ol>
+          <li>
+            Allowing the user to register and sign in with PHP. For this stage, the PHP code should be limited to writing data in a local file, instead of an online database, which I will implement later. The purpose of this stage is to set a system where the user’s input can be captured by PHP so that it can be transmitted to an external database in later stages.
+          </li>
+          <li>
+            Design a database that will be used to store information from the web application. The proper tables must be created with the proper meta data to ensure that data integrity is upheld. Modify the PHP code to place and retrieve information from the database, instead of a local file. Users should be able to sign in or register using a database’s information.
+          </li>
+          <li>
+            Users should be able to sign in into the web application and should remain signed in when navigating through different web pages. This can be done through PHP. Finally, I will use AJAX to support predictive text and live search updates, a better system than updating a search query with a brand-new form submission, which will require the page to reload.
+          </li>
+        </ol>
+      </section>
+
+      <section id="sneakr-register" class="section-content">
+        <h2>Register and Log-in</h2>
+        <p>
+          The first phase of the project requires the user to be able to input their information to the web application. This can be done through forms. I then utilize PHP to capture that information and to make sure that any incoming data is valid by creating a PHP script that cleanses incoming data. If the data is incorrect, then the user is required to re-enter information as required.
+        </p>
+
+        <h3>Form</h3>
+        <div class="img-container">
+          <img src="img/img1_sneakr_php.JPG"/>
+        </div>
+
+        <h3>PHP Script/Validator</h3>
+        <div class="img-container">
+          <img src="img/img2_sneakr_php.JPG"/>
+        </div>
+      </section>
+
+      <section id="sneakr-database" class="section-content">
+        <h2>Database Design</h2>
+        <div class="img-container">
+          <img src="img/database_relations.JPG"/>
+        </div>
+        <p>
+          For an efficient database search, and to ensure data integrity, I created two separate data tables on MySQL that related to one another via a relationship. In this web application, the primary object users are interacting with are shoes and the meta data they bring along. Users however, might want to categorize searches based on shoe brand. Thus, a second table is created with this relationship with the first. Through this method, multiple entries of shoes can be entered into the database, without re-entering the shoe company as a data object. This can reduce load time and increase memory optimization.
+        </p>
+
+        <h3>Connecting to Database</h3>
+        <div class="img-container">
+          <img src="img/img6_sneakr_phase2.JPG" />
+        </div>
+        <p>
+          I used the PHP code above to connect to the proper database. Using PHP’s “required” function allowed me to place this code in a separate file, allowing other web pages to access it if they need access to the database. A major improvement during this phase was the web page’s ability to load the information unto the same web page the user is on, without the need to resubmit the form. I also improved data validity check on the client side to ensure data integrity.
+        </p>
+
+        <div class="dual-img">
+          <div class="img-container">
+            <img src="img/img3_sneakr_php_phase2.JPG" />
+          </div>
+          <div class="img-container">
+            <img src="img/img4_sneakr_php_phase2.JPG"/>
+          </div>
+        </div>
+
+        <p>
+          Once users can log in, they should be able to navigate through the web page without ever having to sign back in again when visiting a new web page (unless they have logged out before). As mentioned before, I used cookies, implemented through PHP to achieve this.
+        </p>
+
+        <div class="dual-img">
+          <div class=img-container>
+            <img src="img/img5_sneakr_phase2.JPG" />
+          </div>
+          <div class=img-container>
+            <img src="img/img7_sneakr_phase2.JPG" />
+          </div>
+        </div>
+
+        <p>
+          The code above shows how I utilized PHP to retrieve log-in data from the database to find out if the current user has registered already. If the user has been found, a session object is created. This session object assures that the user maintains their logged-in status throughout the entire web application.
+        </p>
+      </section>
+
+      <section id="sneakr-predictive" class="section-content">
+        <h2>Predictive Search Result</h2>
+        <p>
+          I utilized AJAX to implement a predictive search feature that updates the search results the user inputs more characters into the search bar. XMLHttpRequest allowed the web page to update without having to refresh. I wanted to include older browsers as well, hence why I included an if/else function that detected if an ActiveXObject was created instead of an XMLHttpRequest object, which means that the browser is running on an older version, or is running Internet Explorer.
+        </p>
+        <div class="img-container">
+          <img src="img/img8_sneakr_phase3.JPG"/>
+        </div>
+      </section>
+
+      <section class="section-content">
+        <h2>Reflection</h2>
+        <p>
+          The project over all was a success. I was able to implement the features I had wanted to implement. Though looking back at the project, there were many other features I could have implemented to really push my understanding of the technologies I have learned. I could have implemented a marketplace hub where users are able to see where the shoe might be on sale, or comment on a shoe posting to advertise if they are selling on their own.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
