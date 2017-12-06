@@ -301,12 +301,78 @@ code p {
   padding-top: 4rem;
 }
 
+.styleguide-section-content {
+  margin: auto;
+  width: 50%;
+}
+
+.section-header {
+  padding-bottom: 0.3rem;
+  border-bottom: solid 1px;
+  margin-bottom: 1rem;
+}
+
+.color-block {
+  width: 20%;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
 #styleguide-content {
   width: 100%;
 }
 
+#color-swatches {
+  color: black;
+  background-color: #D3D3D3;
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+}
+
+#color-container {
+  width: 100%;
+  justify-content: space-between;
+}
+
 #text-types {
   background-color: #D5454E;
+}
+
+#link-btns {
+  background-color: #DBB23E;
+}
+
+#expandable-content {
+  background-color: #B8B6C2;
+}
+
+#quick-jump-nav {
+  background-color: #1850AF;
+}
+
+#images {
+  background-color: #DBB23E;
+}
+
+#work-content {
+  background-color: #D5454E;
+}
+
+#gray {
+  background-color: #B8B6C2;
+}
+
+#red {
+  background-color: #D5454E;
+}
+
+#blue {
+  background-color: #1850AF;
+}
+
+#yellow {
+  background-color: #DBB23E;
 }
 
 /****************************************************************

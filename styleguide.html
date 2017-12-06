@@ -15,21 +15,43 @@
       <div class="flex-display column">
         <a id="enable-hidden-nav" class="alt-subheader">QUICK JUMP</a>
         <div class="hidden-links flex-display column">
-          <a href="#sneakr-overview">OVERVIEW</a>
-          <a href="#sneakr-projectgoal">PROJECT GOAL</a>
-          <a href="#sneakr-process">PROCESS</a>
-          <a href="#sneakr-register">RESGISTER AND LOG IN</a>
-          <a href="#sneakr-database">DATABASE DESIGN</a>
-          <a href="#sneakr-predictive">PREDICTIVE SEARCH RESULT</a>
+          <a href="#color-swatches">COLOR SWATCHES</a>
+          <a href="#text-types">TEXT TYPES</a>
+          <a href="#link-btns">LINK BUTTONS</a>
+          <a href="#expandable-content">EXPANDABLE CONTENT</a>
+          <a href="#quick-jump-nav">QUICK JUMP NAV</a>
+          <a href="#images">IMAGES</a>
+          <a href="#work-content">WORK CONTENT</a>
         </div>
       </div>
       <a class="alt-subheader" href="index.html">PORTFOLIO</a>
     </nav>
 
     <div id="styleguide-content" class="flex-display column">
+
+      <section id="color-swatches" class="styleguide-section flex-display column">
+        <div class="styleguide-section-content">
+          <h1 class="section-header">Color Swatches</h1>
+          <div id="color-container" class="flex-display row">
+            <div id="gray" class="color-block flex-display">
+              <a class="alt-subheader">#B8B6C2</a>
+            </div>
+            <div id="blue" class="color-block flex-display">
+              <a class="alt-subheader">##1850AF</a>
+            </div>
+            <div id="red" class="color-block flex-display">
+              <a class="alt-subheader">#D5454E</a>
+            </div>
+            <div id="yellow" class="color-block flex-display">
+              <a class="alt-subheader">#DBB23E</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="text-types" class="styleguide-section flex-display column">
         <div class="styleguide-section-content">
-          <h1>Headers</h1>
+          <h1 class="section-header">Text Types</h1>
           <h1>Header 1</h1>
           <h2>Header 2</h2>
           <h3>Header 3</h3>
@@ -37,6 +59,132 @@
             <p>&lt;h1&gt;Headers&lt;/h1&gt;<br /> &lt;h1&gt;Header 1&lt;/h1&gt;<br /> &lt;h2&gt;Header 2&lt;/h2&gt;<br /> &lt;h3&gt;Header 3&lt;/h3&gt;</p>
           </code>
           <h3 class="alt-subheader">Alternative Subheader</h3>
+          <code>
+            <p>&lt;h3 class="alt-subheader"&gt;Alternative Subheader&lt;/h3&gt;</p>
+          </code>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <code><p>&lt;p&gt;<br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /> &lt;/p&gt;</p></code>
+        </div>
+      </section>
+
+      <section id="link-btns" class="styleguide-section flex-display column">
+        <div class="styleguide-section-content">
+          <h1>Link Buttons</h1>
+          <nav class="content-external-links">
+            <a class="nav-btn" href="https://github.com/eivannisperos">GITHUB</a>
+            <a class="nav-btn" href="styleguide.html">STYLEGUIDE</a>
+          </nav>
+
+          <code>
+            <p>&lt;nav class="content-external-links"&gt;<br /> &lt;a class="nav-btn" href="https://github.com/eivannisperos"&gt;GITHUB&lt;/a&gt;<br /> &lt;a class="nav-btn" href="styleguide.html"&gt;STYLEGUIDE&lt;/a&gt;<br /> &lt;/nav&gt;</p>
+          </code>
+        </div>
+      </section>
+
+      <section id="expandable-content" class="styleguide-section flex-display-column">
+        <div class="styleguide-section-content">
+          <h1 class="section-header">Expandable Button</h1>
+          <div id="sneakr" class="flex-display column work-btn">
+            <a class="btn-logo">Content</a>
+            <div class="flex-display column concealable card-content">
+              <h1>Hidden Content</h1>
+            </div>
+          </div>
+
+          <div id="flare" class="flex-display column work-btn">
+            <a class="btn-logo">Content</a>
+            <div class="flex-display column concealable card-content">
+              <h1>Hidden Content</h1>
+            </div>
+          </div>
+
+          <div id="about" class="flex-display column work-btn">
+            <a class="btn-logo">Content</a>
+            <div class="flex-display column concealable card-content">
+              <h1>Hidden Content</h1>
+            </div>
+          </div>
+
+          <code>
+            <p>&lt;div id="btn-name" class="flex-display column work-btn"&gt;</p>
+            <p style="padding-left: 30px;">&lt;a class="btn-logo"&gt;Content&lt;/a&gt;</p>
+            <p style="padding-left: 30px;">&lt;div class="flex-display column concealable card-content"&gt;</p>
+            <p style="padding-left: 60px;">&lt;h1&gt;Hidden Content&lt;/h1&gt;</p>
+            <p style="padding-left: 30px;">&lt;/div&gt;</p>
+            <p>&lt;/div&gt;</p>
+          </code>
+        </div>
+      </section>
+
+      <section id="quick-jump-nav" class="styleguide-section flex-display column">
+        <div class="styleguide-section-content">
+          <h1 class="section-header">Quick Jump Nav</h1>
+          <p>
+            As shown above.
+          </p>
+
+          <code>
+            <p>&lt;nav class="full-content-nav flex-display row"&gt;<br />&nbsp;&lt;div class="flex-display column"&gt;<br />&nbsp;&lt;a id="enable-hidden-nav" class="alt-subheader"&gt;QUICK JUMP&lt;/a&gt;<br /> &lt;div class="hidden-links flex-display column"&gt;<br /> &lt;a href="#sneakr-overview"&gt;OVERVIEW&lt;/a&gt;<br /> &lt;a href="#sneakr-projectgoal"&gt;PROJECT GOAL&lt;/a&gt;<br /> &lt;a href="#sneakr-process"&gt;PROCESS&lt;/a&gt;<br /> &lt;a href="#sneakr-register"&gt;RESGISTER AND LOG IN&lt;/a&gt;<br /> &lt;a href="#sneakr-database"&gt;DATABASE DESIGN&lt;/a&gt;<br /> &lt;a href="#sneakr-predictive"&gt;PREDICTIVE SEARCH RESULT&lt;/a&gt;<br /> &lt;/div&gt;<br /> &lt;/div&gt;<br /> &lt;a class="alt-subheader" href="index.html"&gt;PORTFOLIO&lt;/a&gt;<br /> &lt;/nav&gt;</p>
+          </code>
+        </div>
+      </section>
+
+      <section id="images" class="styleguide-section flex-display column">
+        <div class="styleguide-section-content">
+          <h1 class="section-header">Images</h1>
+          <h2>Main Image</h2>
+          <div class="main-img-container">
+            <a href="sneakr.html"><img src="img/sneakr.JPG"/></a>
+          </div>
+
+          <code>
+          <p>&nbsp; &lt;div class="main-img-container"&gt;<br /> &lt;a href="sneakr.html"&gt;&lt;img src="img/sneakr.JPG"/&gt;&lt;/a&gt;<br /> &lt;/div&gt;</p></code>
+
+          <h2>Supporting Image</h2>
+          <div class="img-container">
+            <img src="img/img1_sneakr_php.JPG"/>
+          </div>
+          <code>
+            <p>&nbsp; &lt;div class="img-container"&gt;<br /> &lt;img src="img/img1_sneakr_php.JPG"/&gt;<br /> &lt;/div&gt;</p>
+          </code>
+        </div>
+
+      </section>
+
+      <section id="work-content" class="styleguide-section flex-display column">
+        <div class="full-content-container flex-display column">
+          <h1 class="section-header">Showcasing Work Format</h1>
+          <h1>SNEAKR</h1>
+          <h4 class="alt-subheader">DATE</h4>
+          <div class="main-img-container">
+            <a href="sneakr.html"><img src="img/sneakr.JPG"/></a>
+          </div>
+          <h4 class="alt-subheader">TECHNOLOGIES USED</h4>
+
+          <nav class="content-external-links">
+            <a class="nav-btn" href="http://www.sfu.ca/~enispero/SNEAKR/index.php">SITE</a>
+            <a class="nav-btn" href="https://github.com/eivannisperos">GITHUB</a>
+          </nav>
+
+          <section id="sneakr-overview" class="section-content">
+            <h2>Overview</h2>
+            <p>
+              Developer: Eivan Nisperos
+            </p>
+            <p>
+              SNEAKR was an initiative, a desire to go deeper into web technologies. I wanted to create a web application that allowed me to experiment with PHP, MySQL, and AJAX. Thus, the primary objective to this project is to acquire in-depth understanding of concepts of internet technologies, listed above, and how they relate to web application development. It is also important to note that this project was approached with a technical aspect in mind, not through design. Thus, the overall aesthetic design was not priority for this project, although user experience was considered and sought after during the development of the project.
+            </p>
+          </section>
+
+          <code>
+            <p>&lt;div class="full-content-container flex-display column"&gt;<br /> &lt;h1 class="section-header"&gt;Showcasing Work Format&lt;/h1&gt;<br /> &lt;h1&gt;SNEAKR&lt;/h1&gt;<br /> &lt;h4 class="alt-subheader"&gt;DATE&lt;/h4&gt;<br /> &lt;div class="main-img-container"&gt;<br /> &lt;a href="sneakr.html"&gt;&lt;img src="img/sneakr.JPG"/&gt;&lt;/a&gt;<br /> &lt;/div&gt;<br /> &lt;h4 class="alt-subheader"&gt;TECHNOLOGIES USED&lt;/h4&gt;</p>
+            <p>&lt;nav class="content-external-links"&gt;<br /> &lt;a class="nav-btn" href="http://www.sfu.ca/~enispero/SNEAKR/index.php"&gt;SITE&lt;/a&gt;<br /> &lt;a class="nav-btn" href="https://github.com/eivannisperos"&gt;GITHUB&lt;/a&gt;<br /> &lt;/nav&gt;</p>
+            <p>&lt;section id="sneakr-overview" class="section-content"&gt;<br /> &lt;h2&gt;Overview&lt;/h2&gt;<br /> &lt;p&gt;<br /> Developer: Eivan Nisperos<br /> &lt;/p&gt;<br /> &lt;p&gt;<br /> SNEAKR was an initiative, a desire to go deeper into web technologies. I wanted to create a web application that allowed me to experiment with PHP, MySQL, and AJAX. Thus, the primary objective to this project is to acquire in-depth understanding of concepts of internet technologies, listed above, and how they relate to web application development. It is also important to note that this project was approached with a technical aspect in mind, not through design. Thus, the overall aesthetic design was not priority for this project, although user experience was considered and sought after during the development of the project.<br /> &lt;/p&gt;<br /> &lt;/section&gt;<br /> &lt;/div&gt;</p>
+          </code>
         </div>
       </section>
     </div>
